@@ -209,18 +209,6 @@ header.sticky{
     font-weight: 500;
     color: ghostwhite;
 }
-.newsletter-content form{
-    display: grid;
-    grid-template-columns: 1fr 0.4fr;
-    gap: 16px;
-}
-.newsletter-content form input:first-child{
-    padding: 15px;
-    background: lightblue;
-    font-size: var(--p-font);
-    color: ghostwhite;
-    border-radius: 5px;
-}
 .footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, auto));
@@ -361,5 +349,10 @@ header.sticky{
     }
     section {
         padding: 50px 3% 40px; 
+    }
+}
+@media (max-width: 300px) {
+    .newsletter-form .btn{
+        display: inline-flex
     }
 }
