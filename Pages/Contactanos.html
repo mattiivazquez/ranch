@@ -17,18 +17,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        .video-section {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; 
+   .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
         }
-    
-        .video-section iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
-            height: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: transparent;
+            color: black;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -56,10 +72,18 @@
         </div>
     </Header>
 
-<!--feature Section design-->
-<section class="video-section">
-    <div class="video-wrapper">
-        <iframe src="https://player.vimeo.com/video/680268051" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<!--Contact Section design-->
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form action="#" method="POST">
+            <input type="text" name="first_name" placeholder="Nombre" required>
+            <input type="text" name="last_name" placeholder="Apellido" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Telefono">
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </section>
 
