@@ -39,6 +39,9 @@ header{
     color: var(--text-color);
     font-weight: 700;
 }
+header img{
+    width: 10%;
+}
 span{
     color: var(--main-color)
 }
@@ -194,7 +197,7 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 .newsletter-text h2{
     font-size: var(--h2-font);
@@ -260,12 +263,10 @@ header.sticky{
     font-size: 15px;
 }
 
-/* Estilos para pantallas grandes */
+
 @media (max-width: 1700px) {
-    /* No se requieren cambios para esta resolución */
 }
 
-/* Estilos para pantallas medianas */
 @media (max-width: 1200px) {
     header {
         padding: 14px 5%;
@@ -286,7 +287,6 @@ header.sticky{
     }
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 1050px) {
     .feature-content {
         gap: 1.5rem;
@@ -303,10 +303,10 @@ header.sticky{
         position: absolute;
         width: 100%;
         height: 100vh;
-        padding: 40px 30px; /* Ajusta el padding para pantallas más pequeñas */
+        padding: 40px 30px; 
         top: 0;
         bottom: 0;
-        left: 100%;
+        left: -100%;
         right: 0;
         display: flex;
         flex-direction: column;
@@ -317,8 +317,8 @@ header.sticky{
         display: block;
         color: whitesmoke;
         padding: 0;
-        margin: 0px 0px 30px 0px; /* Ajusta los márgenes para pantallas más pequeñas */
-        font-size: 2rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        margin: 0px 0px 30px 0px; 
+        font-size: 2rem; 
         font-weight: 400;
     }
     .navbar.open {
@@ -326,7 +326,6 @@ header.sticky{
     }
 }
 
-/* Estilos para pantallas extra pequeñas */
 @media (max-width: 800px) {
     .shirtum {
         grid-template-columns: 1fr;
@@ -336,7 +335,6 @@ header.sticky{
     }
 }
 
-/* Estilos para pantallas móviles */
 @media (max-width: 600px) {
     :root {
         --h1-font: 3.5rem;
@@ -347,7 +345,7 @@ header.sticky{
     }
 }
 
-/* Estilos para pantallas muy pequeñas */
+
 @media (max-width: 450px) {
     header {
         padding: 12px 3%;
@@ -356,8 +354,6 @@ header.sticky{
         padding: 7px 3%;
     }
     section {
-        padding: 50px 3% 40px; /* Ajusta el padding para pantallas muy pequeñas */
+        padding: 50px 3% 40px; 
     }
-
-    /* Puedes agregar estilos adicionales específicos para pantallas muy pequeñas si es necesario */
 }
