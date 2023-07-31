@@ -16,7 +16,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+    <style>
+        .video-section {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+        }
+    
+        .video-section iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     
@@ -43,14 +57,9 @@
     </Header>
 
 <!--feature Section design-->
-<section class="nosotros">
-    <div class="nosotros-content">
-        <div class="row">
-            <div class="row-img">
-            </div>
-            <h2>Nuestra Historia</h2>
-            <p>Somos Ranch, una plataforma que nació con el propósito de conectar a personas con intereses comunes y brindarles un espacio donde puedan aprender, compartir y crecer juntos. Fundada en 2018 por un grupo de amigos apasionados por la enseñanza y el aprendizaje, hemos estado trabajando arduamente para crear una comunidad ranchera vibrante y llena de oportunidades.</p>
-        </div>
+<section class="video-section">
+    <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/680268051" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
 </section>
 
