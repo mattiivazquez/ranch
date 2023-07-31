@@ -331,7 +331,7 @@ header.sticky{
         grid-template-columns: 1fr;
     }
     .newsletter-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.5fr;
     }
 }
 
